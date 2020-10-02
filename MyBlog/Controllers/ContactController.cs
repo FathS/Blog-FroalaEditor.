@@ -38,7 +38,7 @@ namespace MyBlog.Controllers
 
                 using (var smtpClient = new SmtpClient("smtp.gmail.com", 587))
                 {
-                    smtpClient.Credentials = new NetworkCredential("granobrablog.@gmail.com", "kolaybiseyolsun.,q");
+                    smtpClient.Credentials = new NetworkCredential("granobrablog.@gmail.com", "********");
                     smtpClient.EnableSsl = true;
                     smtpClient.Send(message);
                 };
